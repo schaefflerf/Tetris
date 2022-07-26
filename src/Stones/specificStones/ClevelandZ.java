@@ -2,15 +2,15 @@ package Stones.specificStones;
 
 import Stones.Stone;
 import Stones.StoneType;
-import util.AnchorPoint;
+import util.RotationPoint;
 
 public class ClevelandZ extends Stone {
-    public ClevelandZ(AnchorPoint position) {
-        super(StoneType.ClevelandZ, position);
+    public ClevelandZ() {
+        super(StoneType.ClevelandZ);
     }
 
     @Override
-    public void spawnStone(AnchorPoint anchorPoint) {
+    public void spawnStone() {
 
     }
 

@@ -2,15 +2,15 @@ package Stones.specificStones;
 
 import Stones.Stone;
 import Stones.StoneType;
-import util.AnchorPoint;
+import util.RotationPoint;
 
 public class Hero extends Stone {
-    public Hero(AnchorPoint position) {
-        super(StoneType.Hero, position);
+    public Hero() {
+        super(StoneType.Hero);
     }
 
     @Override
-    public void spawnStone(AnchorPoint anchorPoint) {
+    public void spawnStone() {
 
     }
 

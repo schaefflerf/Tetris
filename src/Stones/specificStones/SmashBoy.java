@@ -2,16 +2,19 @@ package Stones.specificStones;
 
 import Stones.Stone;
 import Stones.StoneType;
-import util.AnchorPoint;
 
 public class SmashBoy extends Stone {
-    public SmashBoy(AnchorPoint position) {
-        super(StoneType.SmashBoy, position);
+    private final String[][] stonePattern = new String[12][22]; //TODO: Change it with COL and ROWS
+    public SmashBoy() {
+        super(StoneType.SmashBoy);
     }
 
     @Override
-    public void spawnStone(AnchorPoint anchorPoint) {
-
+    public void spawnStone() {
+        stonePattern[1][5] = "S";
+        stonePattern[1][6] = "S";
+        stonePattern[2][5] = "S";
+        stonePattern[2][6] = "S";
     }
 
     @Override

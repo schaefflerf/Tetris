@@ -1,6 +1,8 @@
 package Board;
 
 import Stones.StoneType;
+import Stones.specificStones.*;
+import util.RotationPoint;
 
 public class Board {
     private final Board board;
@@ -19,6 +21,17 @@ public class Board {
     //Setting start positioning for the new coming Stone
     public void spawnStone(StoneType stoneType){
         //TODO:
+        switch (stoneType) {
+            case SmashBoy -> new SmashBoy();
+            case Hero -> new Hero();
+            case BlueRicky -> new BlueRicky();
+            case OrangeRicky -> new OrangeRicky();
+            case ClevelandZ -> new ClevelandZ();
+            case RhodeIslandZ -> new RhodeIslandZ();
+
+
+        }
+
     }
 
     public void fillField(){
@@ -49,4 +62,5 @@ public class Board {
     public Board getBoard() {
         return board;
     }
+
 }

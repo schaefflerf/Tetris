@@ -2,15 +2,15 @@ package Stones.specificStones;
 
 import Stones.Stone;
 import Stones.StoneType;
-import util.AnchorPoint;
+import util.RotationPoint;
 
 public class RhodeIslandZ extends Stone {
-    public RhodeIslandZ(AnchorPoint position) {
-        super(StoneType.RhodeIslandZ, position);
+    public RhodeIslandZ() {
+        super(StoneType.RhodeIslandZ);
     }
 
     @Override
-    public void spawnStone(AnchorPoint anchorPoint) {
+    public void spawnStone() {
 
     }
 
