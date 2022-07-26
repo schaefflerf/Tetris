@@ -4,6 +4,10 @@ import Stones.Stone;
 import Stones.StoneType;
 
 public class SmashBoy extends Stone {
+    public String[][] getStonePattern() {
+        return stonePattern;
+    }
+
     private final String[][] stonePattern = new String[12][22]; //TODO: Change it with COL and ROWS
     public SmashBoy() {
         super(StoneType.SmashBoy);

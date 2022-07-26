@@ -32,7 +32,7 @@ public class Game {
     }
 
     private void update() {
-        //TODO: Falling method
+        //TODO: Falling method, Refresh board
 
 
     }

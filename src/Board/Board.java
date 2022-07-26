@@ -18,7 +18,7 @@ public class Board {
         printField();
     }
 
-    //Setting start positioning for the new coming Stone
+    //Spawn stone at start position
     public void spawnStone(StoneType stoneType){
         //TODO:
         switch (stoneType) {
@@ -28,8 +28,6 @@ public class Board {
             case OrangeRicky -> new OrangeRicky();
             case ClevelandZ -> new ClevelandZ();
             case RhodeIslandZ -> new RhodeIslandZ();
-
-
         }
 
     }
